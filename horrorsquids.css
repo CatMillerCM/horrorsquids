@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
 }
 
 header {
@@ -9,7 +10,6 @@ header {
   padding-top: 50px;
   padding-bottom: 40px;
   text-align: center;
-  font-family: "Comfortaa", cursive;
 }
 
 h2 {
@@ -22,9 +22,30 @@ h3 {
 }
 
 form {
-  border: none;
+  background-color: rgb(226, 43, 134);
   text-align: center;
+  padding-bottom: 50px;
 }
 legend {
   max-width: 300px;
+  padding-top: 8px;
+  padding-bottom: 25px;
+}
+button {
+  margin: 32px;
+  background-color: rgb(6, 153, 153);
+}
+
+input,
+label,
+button,
+select {
+  padding: 8px;
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 240px;
+  max-width: 240px;
 }
