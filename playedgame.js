@@ -4,10 +4,13 @@ let lastName = params.get("lastname");
 let ageGroup = params.get("agegroup");
 let ability = params.get("ability");
 
-console.log(firstName);
-console.log(lastName);
-console.log(ageGroup);
-console.log(ability);
+// const {
+//   firstName,
+//   lastName,
+//   ageGroup,
+//   ability,
+//   number,
+// } = require("./startgame");
 
 const welcome = document.getElementById("welcome");
 const playerNumber = document.getElementById("playerNumber");

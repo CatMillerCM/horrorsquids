@@ -7,18 +7,18 @@
 
 header {
   background-color: rgb(6, 153, 153);
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding-top: 45px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
 h2 {
-  padding: 20px;
+  padding: 15px;
   text-align: center;
 }
 h3 {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 form {
@@ -26,10 +26,13 @@ form {
   text-align: center;
   padding-bottom: 50px;
 }
+fieldset {
+  border-style: none;
+}
 legend {
   max-width: 300px;
-  padding-top: 8px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 8px;
 }
 button {
   margin: 32px;
