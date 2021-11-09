@@ -1,13 +1,30 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
   background-color: rgb(6, 153, 153);
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-top: -22px;
+  padding-top: 50px;
+  padding-bottom: 40px;
   text-align: center;
   font-family: "Comfortaa", cursive;
+}
+
+h2 {
+  padding: 20px;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+form {
+  border: none;
+  text-align: center;
+}
+legend {
+  max-width: 300px;
 }
