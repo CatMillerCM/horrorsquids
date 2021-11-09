@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HORRORscopes</title>
+    <link rel="stylesheet" href="horoscopes.css" />
+    <script src="horoscopes.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>HORRORscopes</h1>
+    </header>
+    <main id="main">
+      <h2>Get your HORRORscopes</h2>
+      <form action="horoscopes2.html" method="GET" id="entry-form">
+        <fieldset>
+          <legend>
+            Please provide a first and last name and select your starsign.
+          </legend>
+          <label for="firstname">First name (* required)</label>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            required
+            pattern="[a-z]+"
+          />
+          <span id="firstnameError"></span>
+          <label for="lastname">Last name (* required)</label>
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            required
+            pattern="[a-z]+"
+          />
+          <span id="lastnameError"></span>
+          <label for="starsign">Starsign</label>
+          <select name="starsign" id="starsign">
+            <option
+              value="Please select your starsign"
+              selected="true"
+              disabled
+            >
+              Please select your starsign
+            </option>
+            <option value="Capricorn">Capricorn</option>
+            <option value="Virgo">Virgo</option>
+          </select>
+          <button type="submit" id="submit">Submit</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

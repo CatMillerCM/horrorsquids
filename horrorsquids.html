@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HORRORsquids</title>
+    <link rel="stylesheet" href="horrorsquids.css" />
+    <script src="horrorsquids.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>HORRORsquids</h1>
+    </header>
+    <main id="main">
+      <h2>Find your HORRORsquid - will you survive the games?</h2>
+      <form action="playedgame.html" method="GET" id="entry-form">
+        <fieldset>
+          <legend>
+            Please provide your first and last name, select your agegroup and
+            choose your best ability.
+          </legend>
+          <label for="firstname">First name (* required)</label>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            required
+            pattern="[a-z]+"
+          />
+          <span id="firstnameError"></span>
+          <label for="lastname">Last name (* required)</label>
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            required
+            pattern="[a-z]+"
+          />
+          <span id="lastnameError"></span>
+          <label for="agegroup">Age group</label>
+          <select name="agegroup" id="agegroup">
+            <option
+              value="Please select your age group"
+              selected="true"
+              disabled
+            >
+              Please select your age group
+            </option>
+            <option value="Under25">Under 25</option>
+            <option value="25-29">25 - 29</option>
+            <option value="30-34">30 - 34</option>
+            <option value="35-39">35 - 39</option>
+            <option value="40-44">40 - 44</option>
+            <option value="45+">45 and over</option>
+          </select>
+          <label for="ability">Ability</label>
+          <select name="ability" id="ability">
+            <option
+              value="Please select your best ability"
+              selected="true"
+              disabled
+            >
+              Please select your best ability
+            </option>
+            <option value="Strength">Strength</option>
+            <option value="Dexterity">Dexterity</option>
+            <option value="Cunning">Cunning</option>
+            <option value="Memory">Memory</option>
+            <option value="Speed">Speed</option>
+          </select>
+          <button type="submit" id="submit">Submit</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
