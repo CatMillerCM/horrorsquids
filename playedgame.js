@@ -4,17 +4,8 @@ let lastName = params.get("lastname");
 let ageGroup = params.get("agegroup");
 let ability = params.get("ability");
 
-// const {
-//   firstName,
-//   lastName,
-//   ageGroup,
-//   ability,
-//   number,
-// } = require("./startgame");
-
 const welcome = document.getElementById("welcome");
 const playerNumber = document.getElementById("playerNumber");
-const text = document.getElementById("game");
 const number = Math.floor(Math.random() * 456);
 const elimination = document.getElementById("elimination");
 
