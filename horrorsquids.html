@@ -21,7 +21,7 @@
     <main id="main">
       <h2>Find your HORRORsquid</h2>
       <h3>Will you survive the games?</h3>
-      <form action="playedgame.html" method="GET" id="entry-form">
+      <form action="startgame.html" method="GET" id="entry-form">
         <fieldset>
           <legend>
             Please provide your first and last name, select your agegroup and
@@ -33,7 +33,7 @@
             name="firstname"
             id="firstname"
             required
-            pattern="[a-z]+"
+            pattern="[a-zA-Z]+"
           />
           <span id="firstnameError"></span>
           <label for="lastname">Last name (* required)</label>
@@ -42,7 +42,7 @@
             name="lastname"
             id="lastname"
             required
-            pattern="[a-z]+"
+            pattern="[a-zA-Z]+"
           />
           <span id="lastnameError"></span>
           <label for="agegroup">Age group</label>

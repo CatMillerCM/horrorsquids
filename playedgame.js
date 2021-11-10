@@ -1,16 +1,9 @@
-let params = new URLSearchParams(document.location.search);
-let firstName = params.get("firstname");
-let lastName = params.get("lastname");
-let ageGroup = params.get("agegroup");
-let ability = params.get("ability");
-
-const welcome = document.getElementById("welcome");
-const playerNumber = document.getElementById("playerNumber");
-const number = Math.floor(Math.random() * 456);
 const elimination = document.getElementById("elimination");
+const gameLost = document.getElementById("game-lost");
 
-welcome.innerText += ` ${firstName} ${lastName}.`;
-playerNumber.innerText += ` ${number}.`;
+const ageGroup = localStorage.getItem("ageGroup");
+const ability = localStorage.getItem("ability");
+const number = localStorage.getItem("number");
 
 const gameObj = {
   "<25": {
@@ -20,7 +13,7 @@ const gameObj = {
     Strength: "red light green light",
     Memory: "recruiter round",
   },
-  "26-29": {
+  "25-29": {
     Dexterity: "marbles",
     Cunning: "honeycomb",
     Speed: "stepping stones",
@@ -60,9 +53,9 @@ const gameObj = {
 const outcome = gameObj[ageGroup][ability];
 
 if (outcome === "WINNER") {
-  elimination.innerText = `Congratulations player ${number}, you have completed the games.\n
-  Your total winnings are 45.6 billion won.`;
+  elimination.innerText = `Congratulations player ${number}, you have completed the games.`;
+  gameLost.innerText = `Your total winnings are 45.6 billion won.`;
 } else {
-  elimination.innerText = `Player ${number} eliminated. \n
-  You failed to complete ${outcome}.`;
+  elimination.innerText = `Player ${number} eliminated.`;
+  gameLost.innerText = `You failed to complete ${outcome}.`;
 }

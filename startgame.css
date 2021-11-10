@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+  text-align: center;
+  background-color: rgb(226, 43, 134);
+}
+
+header {
+  background-color: rgb(6, 153, 153);
+  padding-top: 45px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+h1 {
+  background-color: rgb(6, 153, 153);
+}
+
+h2 {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+form {
+  background-color: rgb(226, 43, 134);
+  text-align: center;
+  padding-bottom: 50px;
+}
+button {
+  margin: 50px;
+  background-color: rgb(6, 153, 153);
+  font-size: x-large;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 240px;
+  max-width: 240px;
+}
